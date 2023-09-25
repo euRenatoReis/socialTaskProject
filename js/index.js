@@ -1,16 +1,14 @@
-import { getData } from "./getdata/getData.js";
-import { renderderizaUsers } from "./services/renderiza.js";
+import { getData, getPosts } from "./getdata/getData.js";
+import { renderderizaUsers, renderizaPostagens } from "./services/renderiza.js";
 
 const main = document.querySelector('main')
 const portal = document.querySelector('.portal');
 const render = document.querySelector('.render');
 
 
-const pegarResults = await getData()
+const pegarResultsUsers = await getData()
+const pegarResultsPosts = await getPosts()
 
-renderderizaUsers(render, pegarResults, main)
+renderderizaUsers(render, pegarResultsUsers, main)
 
-portal.addEventListener('click', async () => {
-
-  
-})
+renderizaPostagens(portal, pegarResultsPosts)
