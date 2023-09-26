@@ -1,15 +1,16 @@
+body {
 
-body{
-
-     background-color: rgb(30, 153, 30);
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     width: 100vw;
-     height: 100vh;
+    background-color: rgb(30, 153, 30);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Lobster', cursive;
+    font-family: 'Roboto Slab', serif;
 }
 
-main{
+main {
     width: 100%;
     height: 100%;
     display: flex;
@@ -17,36 +18,36 @@ main{
     background-color: darkcyan;
 }
 
-.portal{
+.portal {
 
-    width: 70%;
     background-color: yellowgreen;
     display: flex;
     flex-direction: column;
     color: white;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    width: 70%;
 }
 
-.render{
+.render {
 
-    width: 30%;
-    padding: 20px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
 }
 
-.users{
+.users {
 
     display: flex;
     width: 100%;
     height: 50px;
-    margin-top: 20px;
+    margin-top: 30px;
     background-color: white;
 }
 
-.users .acessarPerfil{
+.users .acessarPerfil {
 
     display: flex;
     width: 100%;
@@ -58,7 +59,7 @@ main{
     padding: 10px;
 }
 
-.post-card{
+.post-card {
 
     display: flex;
     padding: 20px;
@@ -71,7 +72,7 @@ main{
     border-radius: 10px;
 }
 
-.card-individual{
+.card-individual {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -84,13 +85,13 @@ main{
     gap: 10px;
 }
 
-.botoes{
+.botoes {
     display: flex;
     flex-direction: row;
     gap: 5px;
 }
 
-.bt-card{
+.bt-card {
 
     display: flex;
     padding: 20px;
@@ -98,24 +99,33 @@ main{
     border-top-left-radius: 10px;
 }
 
-.aba{
+.aba {
 
-   display: flex;
-   flex-direction: column;
-   gap: 10px;
-   height: 100%;
-   width: 100%;
-   background-color: olivedrab;
-   padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+    width: 100%;
+    background-color: olivedrab;
+    padding: 20px;
 }
 
-.aba.fechado{
+.aba.fechado {
 
     display: none;
 }
 
-.fechar-card{
+.fechar-card {
     width: 40px;
     height: 40px;
     background-color: rebeccapurple;
+}
+
+
+.mostrar-comentarios {
+
+    width: 80px;
+    height: 20px;
+    background-color: blue;
+    color: white;
 }
