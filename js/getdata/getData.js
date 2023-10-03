@@ -26,3 +26,17 @@ export async function getPosts() {
         console.error('erro ao pegar posts', error)
     }
 }
+
+export async function getComments(){
+
+    try{
+
+        const dadosComments = await fetch(`https://jsonplaceholder.typicode.com/comments`);
+        const pegarDadosJSon = await dadosComments.json();
+
+        return await pegarDadosJSon
+    }
+    catch(error){
+       console.error('erro ao pegar comentarios da postagem', error)
+    }
+}
